@@ -1,0 +1,34 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(255,105,0,1) 0%, rgba(250,255,0,1) 100%);
+    position: relative;
+    transition: all 0.5s;
+}
+#girl-img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transition: all 0.5s;
+}
+.text {
+    margin: auto;
+    text-align: center;
+    width: 270px;
+    padding-top: 180px;
+    opacity: 0;
+    font-size: 10px;
+    transition: all 0.5s;
+}
+.container:hover #girl-img{
+    transform: translate(250px) scale(0.25);
+    border-radius: 400px;
+    border: 20px white solid;
+}
+.container:hover {
+    border: 10px black solid;
+}
+.container:hover .text{
+    font-size: 16px;
+    opacity: 1;
+}
